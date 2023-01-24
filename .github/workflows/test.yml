@@ -9,11 +9,9 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v3
-              with:
-                path: main
             - uses: actions/checkout@v3
               with:
                 repository: QDUNI/FairSECO
-                path: FAIRSECO
+                path: FAIRSECOFiles
             - run: |
                 tree .
